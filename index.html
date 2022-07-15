@@ -9,8 +9,57 @@
 </head>
 <body>
     <div class="container">
-        <div class="leftSide"></div>
+        <!---------                 --------->
+        <!--------- Barre de gauche --------->
+        <!---------                 --------->
+        <div class="barre-gauche">
+            <!-- Entête barre  composé d'une pp et des icons -->
+            <div class="header">
+                <div class="pp">
+                    <img src="assets/img/me.jpg" class="pp-img" alt="Photo de Profil">
+                </div>
+                <ul class="head_icons">
+                    <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+                    <li><ion-icon name="chatbox"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <!-- Barre de recherche -->
+            <div class="search_chat">
+                <div>
+                    <input type="text" placeholder="Rechercher ou débuter une conversation">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- Lis contact -->
+            <div class="chatlist">
+                <div class="block">
+                    <div class="imgbx">
+                        <img src="assets/img/img2.jpg" class="contact-img" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Punchki Baise</h4>
+                            <p class="time">10:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Comment manita ça waze quoi ? tu es al ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!---------                  --------->
+        <!--------- Barre de droite  --------->
+        <!---------                  --------->
         <div class="rightSide"></div>
     </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
