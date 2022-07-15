@@ -1,0 +1,22 @@
+{
+  "name": "interface-whatsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArletteB/WhatsApp-Interface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArletteB/WhatsApp-Interface/issues"
+  },
+  "homepage": "https://github.com/ArletteB/WhatsApp-Interface#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
