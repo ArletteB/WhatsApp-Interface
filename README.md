@@ -1,4 +1,4 @@
-# J'ai décidé de cloner l'interface de WhatsAPP  Web
+# J'ai décidé de cloner l'interface de WhatsApp  Web
 
 ## Image libre de droit prise sur le site de Pexels "https://www.pexels.com/fr-fr/"
 
