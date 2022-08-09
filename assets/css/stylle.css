@@ -121,6 +121,9 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   cursor: pointer;
 }
+.container .barre-gauche .chatlist .block:hover {
+  background: #f5f5f5;
+}
 .container .barre-gauche .chatlist .block .imgbx {
   position: relative;
   min-width: 45px;
@@ -128,6 +131,9 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 10px;
+}
+.container .barre-gauche .chatlist .active {
+  background: #ebebeb;
 }
 .container .barre-gauche .chatlist .details {
   position: relative;
@@ -146,6 +152,10 @@ body {
 .container .barre-gauche .chatlist .details .listHead .time {
   font-size: 0.75em;
   color: #aaa;
+  color: #111;
+}
+.container .barre-gauche .chatlist .details .listHead .unread {
+  color: #06d755;
 }
 .container .barre-gauche .chatlist .details .message_p {
   display: flex;
@@ -160,6 +170,17 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.container .barre-gauche .chatlist .details .message_p b {
+  color: #fff;
+  background-color: #06d755;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
 }
 .container .rightSide {
   position: relative;
