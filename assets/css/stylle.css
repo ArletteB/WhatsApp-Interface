@@ -13,6 +13,45 @@ body {
   background: linear-gradient(#009688 0%, #009688 130px, #d9dbd5 130px, #d9dbd5 100%);
 }
 
+.header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.header .head_icons {
+  display: flex;
+}
+.header .head_icons li {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  color: #51585c;
+  font-size: 1.5em;
+  margin-left: 22px;
+}
+
+.pp {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pp .pp-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact-img {
   position: absolute;
   top: 0;
@@ -36,43 +75,6 @@ body {
   flex: 30%;
   background: #fff;
   border-right: 1px solid rgba(0, 0, 0, 0.02);
-}
-.container .barre-gauche .header {
-  position: relative;
-  width: 100%;
-  height: 60px;
-  background: #ededed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
-}
-.container .barre-gauche .header .pp {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.container .barre-gauche .header .pp .pp-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.container .barre-gauche .header .head_icons {
-  display: flex;
-}
-.container .barre-gauche .header .head_icons li {
-  display: flex;
-  list-style: none;
-  cursor: pointer;
-  color: #51585c;
-  font-size: 1.5em;
-  margin-left: 22px;
 }
 .container .barre-gauche .search_chat {
   position: relative;
@@ -196,6 +198,75 @@ body {
   height: 100%;
   background: url(/assets/img/fond.png);
   opacity: 0.2;
+}
+.container .rightSide .header .imgtext {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .rightSide .header .imgtext h4 {
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-left: 15px;
+  span: 0;
+}
+.container .rightSide .chatBox {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 120px);
+  padding: 50px;
+  overflow-y: auto;
+}
+.container .rightSide .chatBox .message {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+}
+.container .rightSide .chatBox .message p {
+  position: relative;
+  right: 0;
+  text-align: right;
+  max-width: 65%;
+  padding: 12px;
+  background: #dcf8c6;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.container .rightSide .chatBox .message p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #dcf8c6 0%, #dcf8c6 50%, transparent 50%, transparent);
+}
+.container .rightSide .chatBox .message p span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85em;
+  opacity: 0.5;
+}
+.container .rightSide .chatBox .my-message {
+  justify-content: flex-end;
+}
+.container .rightSide .chatBox .frnd-message {
+  justify-content: flex-start;
+}
+.container .rightSide .chatBox .frnd-message p {
+  background: #fff;
+  text-align: left;
+}
+.container .rightSide .chatBox .frnd-message p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
 }
 
 /*# sourceMappingURL=stylle.css.map */
